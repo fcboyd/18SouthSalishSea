@@ -766,12 +766,6 @@
     "hexes": [
       {
         "color": "plain",
-        "hexes": [
-          "E26"
-        ]
-      },
-      {
-        "color": "plain",
         "terrain": [
           {
             "type": "tree",
@@ -834,16 +828,13 @@
           "E6",
           "E8",
           "E10",
-          "E12",
           "E14",
           "E16",
           "E18",
           "E20",
-          "E26",
           "E28",
           "E30",
           "E32",
-          "F5",
           "F7",
           "F9",
           "F11",
@@ -859,7 +850,6 @@
           "F31",
           "F33",
           "G8",
-          "G10",
           "G12",
           "G14",
           "G16",
@@ -874,7 +864,6 @@
           "G34",
           "H5",
           "H7",
-          "H9",
           "H11",
           "H13",
           "H15",
@@ -887,7 +876,6 @@
           "H29",
           "H31",
           "H33",
-          "I6",
           "I8",
           "I10",
           "I12",
@@ -901,6 +889,7 @@
           "I28",
           "I30",
           "I32",
+          "J5",
           "J7",
           "J9",
           "J11",
@@ -932,8 +921,8 @@
          "E34",
          "F31",
          "G28",
-         "H9",
          "H31",
+         "I8",
          "I10",
          "I12",
          "I22",
@@ -966,8 +955,6 @@
          "C18",
          "C24",
          "C32",
-         "E24",
-         "E26",
          "E34",
          "G32",
          "G34",
@@ -1013,13 +1000,17 @@
           "D27",
           "E6",
           "E8",
+          "E10",
+          "E12",
           "E14",
           "E16",
           "E18",
           "E20",
           "E22",
-          "E24",
+          "E26",
           "E28",
+          "F5",
+          "F7",
           "F15",
           "F17",
           "F19",
@@ -1028,6 +1019,8 @@
           "F25",
           "F27",
           "F29",
+          "G6",
+          "G10",
           "G14",
           "G20",
           "G26"
@@ -1055,29 +1048,6 @@
             "G12"
         ]
       },
-      {
-        "color": "water",
-        "terrain": [
-          {
-            "type": "water",
-            "cost": 20
-          }
-        ],
-        "track":[
-            {"type": "offboard",
-            "side": 3}
-        ],
-        "hexes": [
-            "F25"
-        ]
-      },
-      {
-      "color": "offboard",
-      "hexes": [
-        "F5",
-        "H5"
-      ]
-    },
     {
         "color": "offboard",
         "removeBorders": [
@@ -1124,7 +1094,7 @@
       }
   ],
         "hexes": [
-          "G8"
+          "H7"
         ]
     },
     {
@@ -1158,32 +1128,61 @@
         "C14"
       ]
     },
-
     {
-      "cities": [
-        {
-          "name": {
-            "name": "Bremerton"
+        "color": "offboard",
+        "names": [
+          {
+            "name": "Bremerton",
+            "angle": 60,
+            "percent": 0.85,
+            "fontSize": 14,
+            "rotation": 60
           }
-        }
-      ],
-      "tokens": [
-        {"label": "NCR"}
-    ],
-    "routeBonus": [
-        {
-          "value": "Seattle",
-          "fillColor": "black",
-          "strokeColor": "red",
-          "textColor": "white",
-          "angle": 180,
-          "percent": -0.6
-        }
-      ],
-      "hexes": [
-        "C22"
-      ]
-    },
+        ],
+        "cities": [
+          {
+            "size": 2
+          }
+        ],
+        "tokens": [
+          {"label": "CGR",
+          "angle": 90,
+          "percent": 0.33}
+        ],
+        "track": [
+          {
+            "type": "straight",
+            "side": 1,
+            "end": 0.5
+          },
+          {
+            "type": "straight",
+            "side": 3,
+            "end": 0.5
+          },
+          {
+            "type": "straight",
+            "side": 5,
+            "end": 0.5
+          },
+          {
+            "type": "straight",
+            "side": 6,
+            "end": 0.5
+          }
+        ],
+        "values": [
+          {
+            "value": "?+20",
+            "fontsize": 8,
+            "angle": 180,
+            "percent": 0.7
+          }
+        ],
+        "hexes": [
+            "C22"
+          ]
+        },
     {
       "cities": [
         {
@@ -1201,27 +1200,6 @@
       ],
       "hexes": [
         "D19"
-      ]
-    },
-    {
-      "color": "trees",
-      "centerTowns": [
-        {
-          "size": 1,
-          "name": {
-              "name": "Vashon"
-          }
-        }
-    ],
-    "terrain": [
-      {
-        "type": "tree",
-        "cost": 20,
-        "color": "black"
-      }
-    ],
-      "hexes": [
-        "E24"
       ]
     },
     {
@@ -1476,7 +1454,7 @@
           5
       ],
       "hexes": [
-        "G6"
+        "H5"
       ]
     },
     {
@@ -1594,6 +1572,48 @@
     },
     {
       "color": "offboard",
+      "names": [
+        {
+          "name": "San Juan Islands",
+          "angle": 350,
+          "percent": 0.85,
+          "fontSize": 14,
+          "rotation": 0
+        }
+      ],
+      "cities": [
+        {
+          "size": 2
+        }
+      ],
+      "track": [
+        {
+          "type": "straight",
+          "side": 1
+        },
+        {
+          "type": "straight",
+          "side": 3
+        },
+        {
+            "type": "straight",
+            "side": 5
+          }
+      ],
+      "values": [
+        {
+          "value": "?+30",
+          "fontsize": 8,
+          "angle": 160,
+          "percent": 0.7
+        }
+      ],
+      "hexes": [
+        "D9"
+      ]
+    },
+    {
+      "color": "offboard",
       "track": [
         {
           "type": "gentle",
@@ -1605,7 +1625,7 @@
        6
       ],
       "hexes": [
-        "F5"
+        "G4"
       ]
     },
     {
@@ -1621,7 +1641,7 @@
          2
         ],
         "hexes": [
-          "H5"
+          "I4"
         ]
       },
     {
@@ -1662,6 +1682,13 @@
         {"name": {
           "name": "Bethel"
         }}
+      ],
+      "values": [
+        {
+          "value": "10",
+          "angle": 90,
+          "percent": 0.5
+        }
       ],
       "track": [
         {
@@ -2111,7 +2138,7 @@
               }
             ],
         "hexes": [
-            "E12"
+            "F11"
         ]
     },
     {
@@ -2145,7 +2172,9 @@
               {
                 "type": "tree",
                 "cost": 10,
-                "color": "black"
+                "color": "black",
+                "angle": 300,
+                "percent": 0.5
               }
             ],
         "hexes": [
@@ -2168,7 +2197,7 @@
               }
             ],
         "hexes": [
-            "G10"
+            "H9"
         ]
     },
     {
@@ -2242,7 +2271,7 @@
               }
             ],
         "hexes": [
-            "I8"
+            "J7"
         ]
     },
     {
@@ -2305,7 +2334,7 @@
             }
           ],
           "hexes": [
-            "H7" 
+            "I6" 
           ]
     },
     {
@@ -2423,8 +2452,8 @@
     {
       "color": "red",
       "coords": [
-        "F9p6",
-        "F9p1"
+        "F9p5",
+        "F9p6"
       ]
     },
     {
@@ -2490,8 +2519,8 @@
     {
       "color": "navy",
       "coords": [
-        "F5p6",
-        "F5p1"
+        "G4p6",
+        "G4p1"
       ]
     },
     {
@@ -2589,21 +2618,6 @@
     {
       "color": "navy",
       "coords": [
-        "E24p2",
-        "E24p3",
-        "E24p4"
-      ]
-    },
-    {
-        "color": "navy",
-        "coords": [
-          "E26p5",
-          "E26p6"
-        ]
-      },
-    {
-      "color": "navy",
-      "coords": [
         "F27p5",
         "F27p6",
         "F29p1"
@@ -2616,7 +2630,7 @@
       "circle": 16,
       "bgColor": "red",
       "color": "white",
-      "coord": "F9a60p1"
+      "coord": "F9a0p1"
     },
     {
       "cost": 30,
