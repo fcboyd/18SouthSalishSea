@@ -17,7 +17,11 @@
   },
   "colors": {
     "ferry": "#4d2674",
-    "trees": "#89bd79"
+    "trees": "#2BA07D",
+    "offboard": "#E4580D",
+    "navy": "0f4c81",
+    "plain": "#FFFFF0",
+    "grey": "#97999B"
   },
   "tokens": [
     "Round"
@@ -28,7 +32,8 @@
     {
       "number": 2,
       "certLimit": 28,
-      "capital": 1100
+      "capital": 1100,
+      "handlimit": 14
     },
     {
       "number": 3,
@@ -551,8 +556,96 @@
     }
   ],
   "tiles": {
-    "SS3": {
-        "quantity": 8,
+    "SS1": {
+        "quantity": 10,
+    "color": "yellow",
+    "track": [
+        {
+          "side": 1,
+          "type": "straight"
+        }
+      ],
+      "terrain": [
+        {
+          "type": "river",
+          "cost": 20,
+          "angle": 90,
+          "percent": 0.5
+        }
+      ],
+    "borders":[
+        {
+            "side": 1,
+            "color": "water"
+        },
+        {
+            "side": 2,
+            "color": "water"
+        },
+        {
+            "side": 3,
+            "color": "water"
+        },
+        {
+            "side": 4,
+            "color": "water"
+        },
+        {
+            "side": 5,
+            "color": "water"
+        },
+        {
+            "side": 6,
+            "color": "water"
+        }
+    ]
+    },
+    "SS2": {
+        "quantity": 16,
+    "color": "yellow",
+    "track": [
+        {
+          "side": 1,
+          "type": "gentle"
+        }
+      ],
+      "terrain": [
+        {
+          "type": "river",
+          "cost": 20,
+          "angle": 180,
+          "percent": 0.5
+        }
+      ],
+    "borders":[
+        {
+            "side": 1,
+            "color": "water"
+        },
+        {
+            "side": 2,
+            "color": "water"
+        },
+        {
+            "side": 3,
+            "color": "water"
+        },
+        {
+            "side": 4,
+            "color": "water"
+        },
+        {
+            "side": 5,
+            "color": "water"
+        },
+        {
+            "side": 6,
+            "color": "water"
+        }
+    ]
+    },
+    "SSS3": {
+        "quantity": 2,
         "color": "green",
         "track": [
             {
@@ -593,8 +686,8 @@
             }
         ]
         },
-        "SS4": {
-            "quantity": 8,
+        "SSS4": {
+            "quantity": 2,
         "color": "green",
         "track": [
             {
@@ -635,95 +728,91 @@
             }
         ]
         },
-        "SS1": {
-            "quantity": 8,
-        "color": "yellow",
-        "track": [
-            {
-              "side": 1,
-              "type": "straight"
-            }
-          ],
-          "terrain": [
-            {
-              "type": "river",
-              "cost": 20,
-              "angle": 90,
-              "percent": 0.5
-            }
-          ],
-        "borders":[
-            {
-                "side": 1,
-                "color": "water"
-            },
-            {
-                "side": 2,
-                "color": "water"
-            },
-            {
-                "side": 3,
-                "color": "water"
-            },
-            {
-                "side": 4,
-                "color": "water"
-            },
-            {
-                "side": 5,
-                "color": "water"
-            },
-            {
-                "side": 6,
-                "color": "water"
-            }
-        ]
+    "SSS5": {
+        "quantity": 2,
+    "color": "green",
+    "track": [
+        {
+          "side": 1,
+          "type": "gentle",
+          "cross": "under"
         },
-        "SS2": {
-            "quantity": 8,
-        "color": "yellow",
-        "track": [
-            {
-              "side": 1,
-              "type": "gentle"
-            }
-          ],
-          "terrain": [
-            {
-              "type": "river",
-              "cost": 20,
-              "angle": 180,
-              "percent": 0.5
-            }
-          ],
-        "borders":[
-            {
-                "side": 1,
-                "color": "water"
-            },
-            {
-                "side": 2,
-                "color": "water"
-            },
-            {
-                "side": 3,
-                "color": "water"
-            },
-            {
-                "side": 4,
-                "color": "water"
-            },
-            {
-                "side": 5,
-                "color": "water"
-            },
-            {
-                "side": 6,
-                "color": "water"
-            }
-        ]
+        {
+          "side": 2,
+          "type": "gentle",
+          "cross": "over"
+        }
+      ],
+    "borders":[
+        {
+            "side": 1,
+            "color": "water"
         },
-          "SS5": {
+        {
+            "side": 2,
+            "color": "water"
+        },
+        {
+            "side": 3,
+            "color": "water"
+        },
+        {
+            "side": 4,
+            "color": "water"
+        },
+        {
+            "side": 5,
+            "color": "water"
+        },
+        {
+            "side": 6,
+            "color": "water"
+        }
+    ]
+    },
+    "SSS6": {
+        "quantity": 2,
+    "color": "green",
+    "track": [
+        {
+          "side": 1,
+          "type": "gentle",
+          "cross": "under"
+        },
+        {
+          "side": 4,
+          "type": "gentle",
+          "cross": "over"
+        }
+      ],
+    "borders":[
+        {
+            "side": 1,
+            "color": "water"
+        },
+        {
+            "side": 2,
+            "color": "water"
+        },
+        {
+            "side": 3,
+            "color": "water"
+        },
+        {
+            "side": 4,
+            "color": "water"
+        },
+        {
+            "side": 5,
+            "color": "water"
+        },
+        {
+            "side": 6,
+            "color": "water"
+        }
+    ]
+    },
+          "SSS7": {
             "quantity": 1,
             "color": "grey",
             "cities": [
@@ -741,7 +830,7 @@
             ],
             "values": [
               {
-                "value": 30,
+                "value": 40,
                 "angle": 210,
                 "percent": 0.8
               }
@@ -766,25 +855,20 @@
     "hexes": [
       {
         "color": "plain",
-        "terrain": [
+        "names": [
           {
-            "type": "tree",
-            "cost": 10,
+            "name": "10",
+            "fontSize": 18,
             "color": "black"
           }
         ],
-        "hexes": [    
-          "A6",
-          "A8",
+        "hexes": [   
           "A10",
-          "A12",
           "A14",
           "A16",
           "A26",
           "A28",
           "A30",
-          "B7",
-          "B9",
           "B11",
           "B13",
           "B15",
@@ -852,7 +936,6 @@
           "G8",
           "G12",
           "G14",
-          "G16",
           "G18",
           "G20",
           "G22",
@@ -889,7 +972,6 @@
           "I28",
           "I30",
           "I32",
-          "J5",
           "J7",
           "J9",
           "J11",
@@ -904,10 +986,10 @@
       },
       {
         "color": "plain",
-        "terrain": [
+        "names": [
           {
-            "type": "tree",
-            "cost": 20,
+            "name": "20",
+            "fontSize": 18,
             "color": "black"
           }
         ],
@@ -931,14 +1013,17 @@
         ]
       },
       {
-        "color": "trees",
-        "terrain": [
-            {
-              "type": "tree",
-              "cost": 20,
-              "color": "black"
-            }
-          ],
+        "color": "plain",
+        "shapes": [
+          {
+            "type": "hexagon",
+            "color": "trees",
+            "text": "20",
+            "fontSize": 18,
+            "borderWidth": 0,
+            "width": 130
+          }
+        ],
         "hexes": [
          "A14",
          "A18",
@@ -969,7 +1054,7 @@
           "C20",
           "E32",
           "F7",
-          "F11",
+          "G10",
           "G12"
         ]
       },
@@ -982,9 +1067,8 @@
           }
         ],
         "hexes": [
-          "A8",
           "A10",
-          "B9",
+          "A12",
           "B11",
           "C8",
           "C10",
@@ -1007,10 +1091,10 @@
           "E18",
           "E20",
           "E22",
+          "E24",
           "E26",
           "E28",
           "F5",
-          "F7",
           "F15",
           "F17",
           "F19",
@@ -1020,10 +1104,28 @@
           "F27",
           "F29",
           "G6",
-          "G10",
           "G14",
+          "G16",
           "G20",
           "G26"
+        ]
+      },
+      {
+        "color": "water",
+        "terrain": [
+          {
+            "type": "water",
+            "cost": 40
+          }
+        ],
+        "hexes": [
+            "A10",
+            "B11",
+            "C6",
+            "C8",
+            "D7",
+            "D5",
+            "F5"
         ]
       },
       {
@@ -1051,37 +1153,12 @@
     {
         "color": "offboard",
         "removeBorders": [
-            1,
-            6,
-            2
-          ],
-        "hexes": [
-          "B5"
-        ]
-      },
-    {
-        "color": "offboard",
-        "removeBorders": [
             6,
             5
           ],
         "hexes": [
-          "A6"
+          "A8"
         ]
-      },
-    {
-        "color": "plain",
-        "centerTowns": [
-            {
-              "size": 1,
-              "name": {
-                  "name": "Port Angeles"
-              }
-            }
-        ],
-          "hexes": [
-            "A12"
-          ]
       },
     {
     "color": "plain",
@@ -1094,7 +1171,7 @@
       }
   ],
         "hexes": [
-          "H7"
+          "G6"
         ]
     },
     {
@@ -1113,19 +1190,20 @@
       "cities": [
         {
           "name": {
-            "name": "Port Townsend"
+            "name": "Port Angeles"
           }
         }
       ],
-      "terrain": [
+      "names": [
         {
-          "type": "tree",
-          "cost": 20,
-          "color": "green"
+          "name": "20",
+          "fontSize": 18,
+          "percent": 0.7,
+          "color": "black"
         }
       ],
       "hexes": [
-        "C14"
+        "B13"
       ]
     },
     {
@@ -1171,11 +1249,16 @@
             "end": 0.5
           }
         ],
-        "values": [
+        "shapes": [
           {
-            "value": "?+20",
-            "fontsize": 8,
-            "angle": 180,
+            "type": "hexagon",
+            "color": "white",
+            "text": "?+20",
+            "textColor": "black",
+            "fontSize": 13,
+            "borderWidth": 2,
+            "width": 40,
+            "angle": 200,
             "percent": 0.7
           }
         ],
@@ -1191,10 +1274,11 @@
           }
         }
       ],
-      "terrain": [
+      "names": [
         {
-          "type": "tree",
-          "cost": 30,
+          "name": "30",
+          "fontSize": 18,
+          "percent": 0.7,
           "color": "black"
         }
       ],
@@ -1264,10 +1348,11 @@
                 }
               }
             ],
-            "terrain": [
+            "names": [
               {
-                "type": "tree",
-                "cost": 10,
+                "name": "10",
+                "fontSize": 18,
+                "percent": 0.7,
                 "color": "black"
               }
             ],
@@ -1279,7 +1364,9 @@
       "color": "plain",
       "labels": [
         {
-          "label": "OO"
+          "label": "OO",
+          "angle": 110,
+          "percent": 0.6
         }
       ],
       "names": [
@@ -1289,6 +1376,17 @@
           "percent": 0.75,
           "fontSize": 20,
           "rotation": 300
+        }
+      ],
+      "routeBonus": [
+        {
+          "value": "Vancouver",
+          "fillColor": "black",
+          "strokeColor": "red",
+          "textColor": "white",
+          "angle":180,
+          "rotation": 0,
+          "percent": 0.75
         }
       ],
       "tokens": [
@@ -1313,7 +1411,9 @@
       "color": "plain",
       "labels": [
         {
-          "label": "OO"
+          "label": "OO",
+          "angle": 110,
+          "percent": 0.6
         }
       ],
       "names": [
@@ -1323,6 +1423,17 @@
           "percent": 0.75,
           "fontSize": 20,
           "rotation": 300
+        }
+      ],
+      "routeBonus": [
+        {
+          "value": "Victoria",
+          "fillColor": "black",
+          "strokeColor": "red",
+          "textColor": "white",
+          "angle":180,
+          "rotation": 0,
+          "percent": 0.75
         }
       ],
       "tokens": [
@@ -1372,7 +1483,7 @@
         },
         {
           "type": "straight",
-          "side": 5,
+          "side": 4,
           "end": 0.5
         },
         {
@@ -1381,21 +1492,25 @@
           "end": 0.5
         }
       ],
-      "values": [
+      "shapes": [
         {
-          "value": "?+40",
-          "fontsize": 8,
-          "angle": 180,
-          "percent": 0.7
+          "type": "hexagon",
+          "color": "white",
+          "text": "?+40",
+          "textColor": "black",
+          "fontSize": 13,
+          "borderWidth": 2,
+          "width": 40,
+          "angle": 210,
+          "percent": 0.8
         }
       ],
       "removeBorders":[
           3,
-          4,
-          5
+          4
       ],
       "hexes": [
-        "B7"
+        "B9"
       ]
     },
     {
@@ -1409,6 +1524,17 @@
           "rotation": 60
         }
       ],
+      "routeBonus": [
+        {
+          "value": "Tacoma",
+          "fillColor": "black",
+          "strokeColor": "red",
+          "textColor": "white",
+          "angle":345,
+          "rotation": 0,
+          "percent": 0.7
+        }
+      ],
       "cities": [
         {
           "size": 2
@@ -1420,11 +1546,6 @@
         "percent": 0.33}
       ],
       "track": [
-        {
-          "type": "straight",
-          "side": 1,
-          "end": 0.5
-        },
         {
           "type": "straight",
           "side": 3,
@@ -1441,20 +1562,25 @@
           "end": 0.5
         }
       ],
-      "values": [
+      "shapes": [
         {
-          "value": "?+50",
-          "fontsize": 8,
-          "angle": 180,
-          "percent": 0.7
+          "type": "hexagon",
+          "color": "white",
+          "text": "?+50",
+          "textColor": "black",
+          "fontSize": 13,
+          "borderWidth": 2,
+          "width": 40,
+          "angle": 210,
+          "percent": 0.8
         }
       ],
       "removeBorders":[
-          3,
-          5
-      ],
+        3,
+        5
+    ],
       "hexes": [
-        "H5"
+        "F5"
       ]
     },
     {
@@ -1499,13 +1625,28 @@
           "cross": "over"
         }
       ],
-      "values": [
+      "shapes": [
         {
-          "value": "?+20",
-          "fontsize": 8,
+          "type": "hexagon",
+          "color": "white",
+          "text": "?+20",
+          "textColor": "black",
+          "fontSize": 13,
+          "borderWidth": 2,
+          "width": 40,
+          "angle": 270,
+          "percent": 0.4
+        }
+      ],
+      "routeBonus": [
+        {
+          "value": "ONP",
+          "fillColor": "black",
+          "strokeColor": "red",
+          "textColor": "white",
+          "rotation": 60,
           "angle": 240,
-          "percent": 0.7,
-          "rotation": 60
+          "percent": 0.8
         }
       ],
       "hexes": [
@@ -1535,17 +1676,6 @@
           "percent": 0.34
       }
       ],
-      "routeBonus": [
-        {
-          "value": "Seattle",
-          "fillColor": "black",
-          "strokeColor": "red",
-          "textColor": "white",
-          "rotation": "120",
-          "angle": 60,
-          "percent": 0.8
-        }
-      ],
       "track": [
         {
           "type": "straight",
@@ -1558,12 +1688,17 @@
           "end": 0.5
         }
       ],
-      "values": [
+      "shapes": [
         {
-          "value": "?+30",
-          "fontsize": 8,
-          "angle": 180,
-          "percent": 0.7
+          "type": "hexagon",
+          "color": "white",
+          "text": "?+30",
+          "textColor": "black",
+          "fontSize": 13,
+          "borderWidth": 2,
+          "width": 40,
+          "angle": 210,
+          "percent": 0.8
         }
       ],
       "hexes": [
@@ -1574,23 +1709,26 @@
       "color": "offboard",
       "names": [
         {
-          "name": "San Juan Islands",
-          "angle": 350,
-          "percent": 0.85,
-          "fontSize": 14,
-          "rotation": 0
-        }
-      ],
+            "name": "San Juan",
+            "angle": 0,
+            "percent": 0.6,
+            "fontSize": 14,
+            "rotation": 0
+          },
+          {
+              "name": "Islands",
+              "angle": 0,
+              "percent": 0.80,
+              "fontSize": 14,
+              "rotation": 0
+            }
+        ],
       "cities": [
         {
           "size": 2
         }
       ],
       "track": [
-        {
-          "type": "straight",
-          "side": 1
-        },
         {
           "type": "straight",
           "side": 3
@@ -1600,16 +1738,86 @@
             "side": 5
           }
       ],
-      "values": [
+      "shapes": [
         {
-          "value": "?+30",
-          "fontsize": 8,
-          "angle": 160,
-          "percent": 0.7
+          "type": "hexagon",
+          "color": "white",
+          "text": "?+30",
+          "textColor": "black",
+          "fontSize": 13,
+          "borderWidth": 2,
+          "width": 40,
+          "angle": 200,
+          "percent": 0.75
         }
       ],
       "hexes": [
         "D9"
+      ]
+    },
+    {
+      "color": "offboard",
+      "names": [
+        {
+            "name": "Vashon",
+            "angle": 60,
+            "percent": 0.7,
+            "fontSize": 14,
+            "rotation": 0
+          },
+          {
+              "name": "Island",
+              "angle": 45,
+              "percent": 0.70,
+              "fontSize": 14,
+              "rotation": 0
+            }
+        ],
+      "cities": [
+        {
+          "size": 1
+        }
+      ],
+      "track": [
+        {
+          "type": "straight",
+          "side": 1
+        }
+      ],
+      "shapes": [
+        {
+          "type": "hexagon",
+          "color": "white",
+          "text": "?+20",
+          "textColor": "black",
+          "fontSize": 13,
+          "borderWidth": 2,
+          "width": 40,
+          "angle": 210,
+          "percent": 0.8
+        }
+      ],
+      "hexes": [
+        "E26"
+      ]
+    },
+    {
+      "color": "offboard",
+      "track": [
+        {
+          "type": "straight",
+          "side": 1
+        },
+        {
+          "type": "gentle",
+          "side": 5
+        }
+      ],
+      "removeBorders": [
+       1
+      ],
+      "hexes": [
+        "E24"
       ]
     },
     {
@@ -1625,7 +1833,7 @@
        6
       ],
       "hexes": [
-        "G4"
+        "E4"
       ]
     },
     {
@@ -1641,26 +1849,26 @@
          2
         ],
         "hexes": [
-          "I4"
+          "G4"
         ]
       },
     {
         "color": "offboard",
         "track": [
           {
-            "type": "gentle",
+            "type": "sharp",
             "side": 6,
             "end": 1
           },
           {
-            "type": "straight",
-            "side": 2,
+            "type": "gentle",
+            "side": 5,
             "end": 5
           }
         ],
         "removeBorders": [
             2,
-            3
+            1
         ],
         "routeBonus": [
             {
@@ -1673,7 +1881,7 @@
             }
           ],
         "hexes": [
-          "C6"
+          "B7"
         ]
       },
     {
@@ -1702,7 +1910,7 @@
       ]
     },
     {
-        "color": "trees",
+        "color": "plain",
         "centerTowns": [
             {
               "name": {
@@ -1710,10 +1918,11 @@
               }
             }
           ],
-          "terrain": [
+          "names": [
             {
-              "type": "tree",
-              "cost": 30,
+              "name": "30",
+              "fontSize": 18,
+              "percent": 0.7,
               "color": "black"
             }
           ],
@@ -1729,6 +1938,9 @@
             "side": 1,
             "end": 4
           }
+        ],
+        "removeBorders":[
+            1
         ],
         "hexes": [
           "A20"
@@ -1780,6 +1992,21 @@
             "end": 4
           }
         ],
+        "routeBonus": [
+            {
+              "value": "Spokane",
+              "fillColor": "black",
+              "strokeColor": "red",
+              "textColor": "white",
+              "rotation": -60,
+              "angle": 300,
+              "percent": 0.7
+            }
+          ],
+          "removeBorders":[
+            1,
+            4
+        ],
         "hexes": [
           "A22"
         ]
@@ -1809,14 +2036,22 @@
                 "rotation": 0
               }
           ],
-          "values": [
+          "shapes": [
             {
-              "value": "?+20",
-              "fontsize": 8,
+              "type": "hexagon",
+              "color": "white",
+              "text": "?+20",
+              "textColor": "black",
+              "fontSize": 13,
+              "borderWidth": 2,
+              "width": 40,
               "angle": 90,
               "percent": 0.6
             }
           ],
+        "removeBorders": [
+            4
+        ],
         "hexes": [
           "A24"
         ]
@@ -1978,13 +2213,13 @@
             }
           }
         ],
-        "terrain": [
+        "names": [
           {
-            "type": "tree",
-            "cost": 20,
-            "color": "black",
+            "name": "10",
+            "fontSize": 18,
             "angle": 320,
-            "percent": 0.7
+            "percent": 0.7,
+            "color": "black"
           }
         ],
         "hexes": [
@@ -2018,13 +2253,13 @@
             }
           }
         ],
-        "terrain": [
+        "names": [
           {
-            "type": "tree",
-            "cost": 10,
-            "color": "black",
+            "name": "10",
+            "fontSize": 18,
             "angle": 320,
-            "percent": 0.7
+            "percent": 0.7,
+            "color": "black"
           }
         ],
         "hexes": [
@@ -2066,12 +2301,12 @@
         "centerTowns": [
             {
                 "name": {
-                  "name": "Dungeoness"
+                  "name": "Port Townsend"
                 }
               }
             ],
         "hexes": [
-            "B13"
+            "C14"
         ]
     },
     {
@@ -2094,11 +2329,12 @@
                 }
               }
             ],
-            "terrain": [
+            "names": [
               {
-                "type": "tree",
-                "cost": 10,
-                "color": "green"
+                "name": "10",
+                "fontSize": 18,
+                "percent": 0.7,
+                "color": "black"
               }
             ],
         "hexes": [
@@ -2138,7 +2374,7 @@
               }
             ],
         "hexes": [
-            "F11"
+            "E12"
         ]
     },
     {
@@ -2149,10 +2385,11 @@
                 }
               }
             ],
-            "terrain": [
+            "names": [
               {
-                "type": "tree",
-                "cost": 20,
+                "name": "20",
+                "fontSize": 18,
+                "percent": 0.7,
                 "color": "black"
               }
             ],
@@ -2168,13 +2405,12 @@
                 }
               }
             ],
-            "terrain": [
+            "names": [
               {
-                "type": "tree",
-                "cost": 10,
-                "color": "black",
-                "angle": 300,
-                "percent": 0.5
+                "name": "10",
+                "fontSize": 18,
+                "percent": 0.7,
+                "color": "black"
               }
             ],
         "hexes": [
@@ -2189,10 +2425,11 @@
                 }
               }
             ],
-            "terrain": [
+            "names": [
               {
-                "type": "tree",
-                "cost": 10,
+                "name": "10",
+                "fontSize": 18,
+                "percent": 0.7,
                 "color": "black"
               }
             ],
@@ -2220,10 +2457,11 @@
                 }
               }
             ],
-            "terrain": [
+            "names": [
               {
-                "type": "tree",
-                "cost": 10,
+                "name": "10",
+                "fontSize": 18,
+                "percent": 0.7,
                 "color": "black"
               }
             ],
@@ -2239,10 +2477,11 @@
                 }
               }
             ],
-            "terrain": [
+            "names": [
               {
-                "type": "tree",
-                "cost": 10,
+                "name": "10",
+                "fontSize": 18,
+                "percent": 0.7,
                 "color": "black"
               }
             ],
@@ -2282,11 +2521,12 @@
                 }
               }
             ],
-            "terrain": [
+            "names": [
               {
-                "type": "tree",
-                "cost": 20,
-                "color": "green"
+                "name": "20",
+                "fontSize": 18,
+                "percent": 0.7,
+                "color": "black"
               }
             ],
         "hexes": [
@@ -2450,21 +2690,21 @@
   ],
   "borders": [
     {
-      "color": "red",
+      "color": "offboard",
       "coords": [
         "F9p5",
         "F9p6"
       ]
     },
     {
-      "color": "red",
+      "color": "offboard",
       "coords": [
         "D19p2",
         "D19p3"
       ]
     },
     {
-        "color": "grey",
+        "color": "offboard",
         "coords": [
           "D19p1",
           "D19p2"
@@ -2486,7 +2726,7 @@
         ]
       },
       {
-        "color": "red",
+        "color": "offboard",
         "coords": [
           "C18p2",
           "D17p1",
@@ -2494,7 +2734,7 @@
         ]
       },
     {
-      "color": "red",
+      "color": "offboard",
       "coords": [
         "F29p6",
         "F29p1"
@@ -2503,24 +2743,48 @@
     {
       "color": "navy",
       "coords": [
-        "B7p5",
-        "B7p6",
-        "B7p1"
+        "B9p5",
+        "B9p6",
+        "B9p1"
+      ]
+    },
+    {
+        "color": "navy",
+        "coords": [
+          "D9p6",
+          "D9p1",
+          "D9p2"
+        ]
+      },
+      {
+        "color": "navy",
+        "coords": [
+          "D9p3",
+          "D9p4",
+          "D9p5"
+        ]
+      },
+    {
+      "color": "navy",
+      "coords": [
+        "B7p3",
+        "B7p4",
+        "B7p5"
       ]
     },
     {
       "color": "navy",
       "coords": [
-        "C6p3",
-        "C6p4",
-        "C6p5"
+        "E4p6",
+        "E4p1"
       ]
     },
     {
       "color": "navy",
       "coords": [
-        "G4p6",
-        "G4p1"
+        "E24p2",
+        "E24p3",
+        "E24p4"
       ]
     },
     {
@@ -2533,16 +2797,17 @@
     {
       "color": "navy",
       "coords": [
-        "A12p2",
-        "A12p3",
-        "A12p4"
+        "B13p1",
+        "B13p2",
+        "B13p3",
+        "B13p4"
       ]
     },
     {
       "color": "navy",
       "coords": [
-        "F13p6",
-        "F13p1"
+        "E12p6",
+        "E12p1"
       ]
     },
     {
@@ -2552,6 +2817,13 @@
         "F13p5"
       ]
     },
+    {
+        "color": "grey",
+        "coords": [
+          "F13p2",
+          "F13p3"
+        ]
+      },
     {
       "color": "navy",
       "coords": [
@@ -2609,7 +2881,7 @@
       ]
     },
     {
-      "color": "red",
+      "color": "offboard",
       "coords": [
         "G22p4",
         "G22p5"
@@ -2628,43 +2900,43 @@
     {
       "cost": 40,
       "circle": 16,
-      "bgColor": "red",
-      "color": "white",
+      "bgColor": "offboard",
+      "color": "plain",
       "coord": "F9a0p1"
     },
     {
       "cost": 30,
       "circle": 16,
-      "bgColor": "red",
-      "color": "white",
+      "bgColor": "offboard",
+      "color": "plain",
       "coord": "D19a180p1"
     },
     {
         "cost": 60,
         "circle": 16,
-        "bgColor": "red",
-        "color": "white",
+        "bgColor": "offboard",
+        "color": "plain",
         "coord": "F29a60p1"
       },
     {
       "cost": 80,
       "circle": 16,
-      "bgColor": "red",
-      "color": "white",
+      "bgColor": "offboard",
+      "color": "plain",
       "coord": "G22a300p1"
     },
     {
         "cost": 60,
         "circle": 16,
-        "bgColor": "red",
-        "color": "white",
+        "bgColor": "offboard",
+        "color": "plain",
         "coord": "D17a120p1"
       },
       {
         "cost": 60,
         "circle": 16,
-        "bgColor": "red",
-        "color": "white",
+        "bgColor": "offboard",
+        "color": "plain",
         "coord": "C18a180p1"
       }
   ]
