@@ -1,3 +1,12 @@
+Needed to Play:
+- Copy of 18India (for certs, trains, tiles, charters, tokens)
+- 18SouthSalishSea Map. Print either of the following:
+  a) Files listed in the 11inx17in Map Files (print on 11x17in paper and then cut along cut line) (.pdf)
+  b) Full-size map file (.pdf)
+- Extra Tiles (formatted for 8.5x11in printing) (.pdf)
+- Rulebook (.odt file)
+
+
 18 South Salish Sea is designed as an 18xx Magazine game based on 18India (similar to 18Boswash or King of Trains and Train of Kings). 
 A copy of 18India is required to play and all rules apply except where called out in the rulebook for South Salish Sea. 
 
